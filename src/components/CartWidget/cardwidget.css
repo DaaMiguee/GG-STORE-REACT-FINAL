@@ -1,0 +1,17 @@
+.cart-button{
+    border: none;
+    margin-right: 10px;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+.cart-button:hover{
+    color: #fff;
+}
+
+.fa-bars{
+    color: #fff;
+}

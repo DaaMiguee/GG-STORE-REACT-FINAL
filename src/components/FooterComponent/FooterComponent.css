@@ -1,0 +1,15 @@
+.footer-component {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 100%);
+    margin-top: 20px;
+    height: 300px;
+}
+.footer-component div h4{
+    font-size: 2rem;
+    margin: 10px;
+    font-weight: 800;
+}

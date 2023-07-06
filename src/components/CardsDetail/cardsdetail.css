@@ -1,0 +1,241 @@
+
+/* cardsDetail */
+.card-detail-sub-container{
+    background-color: #fff;
+    height: 100vh;
+    height: calc(100vh - 66px);
+    display: flex;
+    justify-content:space-between;
+    margin-top: 20px;
+    background-color: transparent;
+}
+.card-detail-sub-container .card-detail-img-container{
+    height: auto;
+    width: 50%;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 5px 0 20px;
+    position: relative;
+}
+.card-detail-sub-container .card-detail-img-container .col-100 .discount-detail{
+    background-color: #ff554d;
+    color: #fff;
+    padding: 5px;
+    font-weight: 500;
+    width: 130px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    height: 50px;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+.carousel-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.card-detail-sub-container .card-detail-desc{
+    width: 50%;
+    height: auto;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0 20px 0 5px;
+    background-color: #fff;
+}
+.card-detail-sub-container .card-detail-desc .brand{
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+.card-detail-sub-container .card-detail-desc .stock{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #000;
+}
+.card-detail-sub-container .card-detail-desc h3{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+}
+.card-detail-sub-container .card-detail-desc .price-container{
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; 
+    height: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    border: solid 2px #c3c3c330;
+}
+
+.payment-methods{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom : 20px;
+    left: 20px;
+}
+.payment-methods img{
+    height: 30px;
+    margin-right: 5px;
+}
+.card-detail-sub-container .card-detail-desc .price-container .price-cont-a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.card-detail-sub-container .card-detail-desc .price-container .price-cont-a .price-wd{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: -13px;
+    padding: -10px;
+}
+
+.card-detail-sub-container .card-detail-desc .price-container .price-cont-b{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card-detail-sub-container .card-detail-desc .price-container .price-cont-b .price{
+    font-size: 1.1rem;
+    text-decoration: line-through;
+    color: #888888;
+    margin-right: 5px;
+}
+.card-detail-sub-container .card-detail-desc .price-container .price-cont-b .ahorro{
+    font-size: 1.1rem;
+    color: #2189ff;
+    margin-left: 5px;
+}
+
+.card-detail-sub-container .card-detail-desc .detail-btn-container{
+    /* background-color: #ff000044; */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-25%);
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.card-detail-sub-container .card-detail-desc .detail-btn-container .btn-buy{
+    text-decoration: none;
+    background-color: #0b2739;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    border: solid 2px black;
+    transition: all 0.3s;
+}
+
+.card-detail-sub-container .card-detail-desc .detail-btn-container .btn-buy:active{
+    border: dotted 2px black;
+}
+.card-detail-sub-container .card-detail-desc .detail-btn-container .btn-add-cart{
+    background-color: #fff;
+    color: #000;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    border: 2px solid black;
+    transition: all 0.3s;
+}
+.card-detail-sub-container .card-detail-desc .detail-btn-container .btn-add-cart:hover{
+    color: #fff;
+    background-color: #0b2739;
+}
+.card-detail-sub-container .card-detail-desc .detail-btn-container .btn-add-cart:active{
+    border: dotted 2px #fff;
+}
+
+.card-detail-specs-container{
+    margin-top: 20px;
+    background-color: transparent;
+}
+.card-detail-specs{
+    background-color: #0b1e32;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 25px;
+}
+.card-detail-specs h2{
+    text-align: center;
+    padding: 20px 0 10px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #000;
+
+}
+.card-detail-specs p{
+    margin-left: 20px;
+    color: #000;
+    padding: 15px;
+}
+
+/* carousell */
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: #2189ff !important;
+}
+.carousel-item{
+    /* border: solid red 2px; */
+    height: calc(100vh - 56px);
+}
+/* fin carousell */
+
+
+/* toastify */
+.Toastify__toast-container {
+    width: 250px;
+}
+.Toastify__toast--default {
+    background: #fff;
+    color: #aaa;
+}
+.Toastify__toast--info {
+    background: #3498db;
+
+}
+.Toastify__toast--success {
+    background: #091f2c;
+    text-align: center;
+}
+.Toastify__toast--warning {
+    background: #f1c40f;
+}
+.Toastify__toast--error {
+    background: #e74c3c;
+}

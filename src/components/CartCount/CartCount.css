@@ -1,0 +1,14 @@
+.count{
+    font-size: 0.7rem;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: #ff554d;
+    border-radius: 50%;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 2px;
+}

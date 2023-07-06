@@ -1,0 +1,119 @@
+.card-container{
+    background-color: #fff;
+    height: 460px;
+    width: 280px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.card-container img{
+    height: 100%;
+    position: absolute;
+    /* top: -85px; */
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.5);
+}
+.card-container .discount{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1rem;
+    /* background-color: #2189ff; */
+    background-color: #ff554d;
+    color: #fff;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    font-weight: 700;
+    
+}
+.card-container .discount::after{
+    content: "%OFF";
+    color: #fff;
+    font-size: 0.6rem;
+}
+
+.card-container:hover .zoom-img {
+    transform: translateX(-50%) scale(0.51);
+    transition: all 0.5s;
+}
+
+.card-container h3{
+    color: #000;
+    position: absolute;
+    bottom: 150px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 20px;
+}
+.card-container .price{
+    position: absolute;
+    bottom: 100px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 20px;
+    text-decoration: line-through;
+    color: #888888;
+}
+.card-container .price-wd{
+    position: absolute;
+    bottom: 75px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 20px;
+    color: #000;
+}
+.card-desc .item-info{
+    position: absolute;
+    bottom: 0px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0b2739;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: solid 1px #ffffff4a;
+
+}
+.card-desc .item-info:hover{
+    background-color: #424242;
+}
+.card-desc .item-info:active{
+    outline:2px #82c1e9 dotted;
+}
+
+
+
+
+
+
+.discount0{
+    display: none;
+}

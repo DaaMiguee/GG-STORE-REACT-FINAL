@@ -1,0 +1,19 @@
+.total-cart{
+    font-size: 2rem;
+    text-align: center;
+    background-color: #fff;
+    width: 95%;
+    height: 20%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.total-cart h4{
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.total-cart h3{
+    font-size: 2rem;
+    font-weight: 500;
+    
+}

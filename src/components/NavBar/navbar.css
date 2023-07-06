@@ -1,0 +1,45 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: padding 0.4s ease, background 0.4s ease;
+    box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.063);
+    -webkit-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.068);
+    -moz-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.04);
+}
+.navbar-brand{
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+.navbar-brand:hover{
+    color: #fff;
+}
+.nav-link{
+    font-size: 0.8rem;
+    /* color: #fff !important;  oculto por efecto en navbar */
+    font-weight: 500;
+    border-radius: 25px;
+    padding:5px;
+    margin: 0 1px;
+    transition: all 0.4s ease;
+}
+.nav-link:hover{
+    color:#fff;
+}
+.nav-link:active{
+    outline: 2px #82c1e9 dotted;
+    color: #fff !important;
+}
+.btn-container{
+    position: absolute;
+    top: 11px;
+    right: 0;
+    margin-right: 10px;
+    display: flex;
+}
+
+.container{
+    margin: 0 35px !important;
+    padding: 0;
+}

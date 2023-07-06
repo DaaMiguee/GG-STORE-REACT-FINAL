@@ -1,0 +1,19 @@
+.filters-container{
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    width: 98%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.093);
+    -webkit-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.09);
+}
+.filters-container h2{
+    font-size: 1.3rem;
+    margin-left: 20px;
+    color: #000;
+}
