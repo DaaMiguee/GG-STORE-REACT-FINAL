@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Entrega final react para CoderHouse 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+El siguiente proyecto fue realizado para la entrega final de react de CoderHouse.
+Alumno Torres Miguel
 
-## Available Scripts
 
-In the project directory, you can run:
+# E-commerce con React
 
-### `npm start`
+Este proyecto de e-commerce desarrollado en React permite explorar y simular la compra de una amplia variedad de productos. Utilizando tecnologías como Firestore, Axios, funciones flecha, Context, React Router DOM, FontAwesome y JSON almacenado en Firestore.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Características destacadas:
+- **Firestore**: La base de datos Firestore se utiliza para almacenar y recuperar los datos de los productos disponibles en la plataforma.
+- **Axios**: Utilice Axios para realizar llamadas a la API de Firestore y obtener la información necesaria para mostrar los productos en la página "Store".
+- **Funciones flecha**: Aproveche las funciones flecha de JavaScript para escribir un código más conciso y legible en todo el proyecto.
+- **Context**: Implemente el Context de React para gestionar el estado global de la aplicación, permitiendo un acceso fácil y seguro a los datos del carrito de compras en todas las páginas.
+- **React Router DOM**: Utilice React Router DOM para habilitar la navegación entre diferentes páginas, como la página principal, la página de detalles del producto y el carrito de compras.
+- **FontAwesome**: Agregamos iconos atractivos y personalizados utilizando la biblioteca FontAwesome para mejorar la experiencia visual del usuario.
+- **Carrito de compras funcional**: Implemente un carrito de compras completamente funcional que permite a los usuarios agregar productos, ajustar las cantidades y realizar la simulacion de un proceso de compra de manera intuitiva.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Con esta aplicación de e-commerce, creé una plataforma intuitiva y fácil de usar que brinda a los usuarios una experiencia de compra agradable y satisfactoria.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Para la ejecucion local
 
-### `npm run build`
+Descargar este repo y en la raíz del proyecto realizar:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para instalar las dependencias:
+npm i
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para ejecutar localmente una vez instaladas las dependencias:
+npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Direccion local
+http://localhost:3000/
 
-### `npm run eject`
+## Aviso de derechos de autor
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto contiene imágenes que pueden estar sujetas a derechos de autor. Las imágenes utilizadas en este proyecto son solo con fines ilustrativos y pertenecen a sus respectivos propietarios.
