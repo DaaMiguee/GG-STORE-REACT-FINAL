@@ -22,14 +22,13 @@
     border-radius: 25px;
     padding:5px;
     margin: 0 1px;
-    transition: all 0.4s ease;
+    transition: outline ;
 }
 .nav-link:hover{
     color:#fff;
 }
 .nav-link:active{
-    outline: 2px #82c1e9 dotted;
-    color: #fff !important;
+    outline: 3px #82c1e9 dotted;
 }
 .btn-container{
     position: absolute;

@@ -9,7 +9,7 @@ const FooterComponent = () => {
                 <h4>GG STORE</h4>
             </div>
             <div>
-                <p>Created by Torres Miguel 2023</p>
+                <p>Created by Miguel Torres 2023</p>
             </div>
         </section>
     )

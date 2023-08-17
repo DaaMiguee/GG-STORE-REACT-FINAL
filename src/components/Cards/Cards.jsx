@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 //css
 import "./cards.css"
 import { CartContext } from '../../context/CartContext'
-const Cards = () => {
 
+const Cards = () => {
     const { productsData } = useContext(CartContext);
 
     const precioFinalCalc = () => {

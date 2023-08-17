@@ -31,7 +31,11 @@ const MainContent = () => {
                     <h3>AMAZFIT GTS 2</h3>
                     <span>15% de descuento en compras online</span>
                     <div className='news-link-container'>
-                        <ButtonComponent className="news-product-info" label ="Ir a Detalles"/>
+                        <ButtonComponent 
+                            className="news-product-info" 
+                            label ="Ir a Detalles"
+                            to={`/product/5003`}
+                            />
                     </div>
                     
                 </div>
@@ -40,7 +44,11 @@ const MainContent = () => {
                     <h3>REDMI NOTE 11 PRO 5G</h3>
                     <span>15% de descuento en compras online</span>
                     <div className='news-link-container'>
-                        <ButtonComponent className="news-product-info" label ="Conoce más"/>
+                        <ButtonComponent 
+                            className="news-product-info" 
+                            label ="Conoce más"
+                            to={`/product/7053`}
+                            />
                     </div>
                 </div>
                 <div className='product-details'>
@@ -48,7 +56,11 @@ const MainContent = () => {
                     <h3>XIAOMI REDMI NOTE 12S 8/256</h3>
                     <span>15% de descuento en compras online</span>
                     <div className='news-link-container'>
-                        <ButtonComponent className="news-product-info" label ="Conoce más"/>
+                        <ButtonComponent 
+                            className="news-product-info" 
+                            label ="Conoce más"
+                            to={`/product/7745`}
+                            />
                     </div>
                 </div>
                 <div className='product-details'>
@@ -56,7 +68,11 @@ const MainContent = () => {
                     <h3>AURICULARES HAYLOU T15</h3>
                     <span>15% de descuento en compras online</span>
                     <div className='news-link-container'>
-                        <ButtonComponent className="news-product-info" label ="Conoce más"/>
+                        <ButtonComponent 
+                            className="news-product-info" 
+                            label ="Conoce más"
+                            to={`/product/5040`}
+                            />
                     </div>
                 </div>
             </section>

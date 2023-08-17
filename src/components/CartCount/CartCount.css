@@ -1,4 +1,7 @@
 .count{
+    position: absolute;
+    top: 1%;
+    right: 5px;
     font-size: 0.7rem;
     color: #ffffff;
     font-weight: 500;
@@ -10,5 +13,5 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-left: 2px;
+    /* margin-left: 2px; */
 }

@@ -28,7 +28,7 @@ const CardsDetail = ({productsData}) => {
             });
     }
     //funcion calcular precio con descuento
-    const precioFinalCalc = () => {
+    const totalCost = () => {
         const precioInicial = productsData.price;
         const porcentajeDescuento = productsData.discount;
         const descuento = precioInicial * (porcentajeDescuento / 100);
@@ -37,7 +37,7 @@ const CardsDetail = ({productsData}) => {
     };
     //funcion calcular ahorro
     const ahorroCalc = () =>{
-        const ahorro =(productsData.price - precioFinalCalc());
+        const ahorro =(productsData.price - totalCost());
         return ahorro;
     };
     //agregar al carrito  //count = contador //state = estado cartwidget
@@ -83,7 +83,7 @@ const CardsDetail = ({productsData}) => {
                     <h3>{productsData.title}</h3>
                     <div className='price-container'>
                         <div className='price-cont-a'>
-                            <span className='price-wd'>${Math.floor(precioFinalCalc()).toLocaleString('es-AR')}</span>
+                            <span className='price-wd'>${Math.floor(totalCost()).toLocaleString('es-AR')}</span>
                         </div>
                         <div className='price-cont-b'>
                             <span className={`${productsData.discount > 0 ? "price" : "discount0"}`}>${productsData.price.toLocaleString('es-AR')}</span>

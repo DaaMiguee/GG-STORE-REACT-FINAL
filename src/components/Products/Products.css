@@ -17,13 +17,19 @@
     margin: 10px;
     
 }
-
-.card-container img{
-    height: 100%;
+.card-container .img-container{
+    border-radius: 25px 25px 0 0;
     position: absolute;
-    top: -100px;
-    left: 50%;
-    transform: translateX(-50%) scale(0.5);
+    top: 0;
+    height: 55%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card-container .img-container img{
+    height: 100%;
 }
 .card-container .discount{
     position: absolute;
@@ -49,7 +55,7 @@
 }
 
 .card-container:hover .zoom-img {
-    transform: translateX(-50%) scale(0.52);
+    transform: scale(1.05);
     transition: all 0.5s;
 }
 
