@@ -15,6 +15,10 @@
 .navbar-brand:hover{
     color: #fff;
 }
+.navbar-toggler{
+    border: solid rgba(0, 20, 40, 0.356) 1px;
+    color: transparent;
+}
 .nav-link{
     font-size: 0.8rem;
     /* color: #fff !important;  oculto por efecto en navbar */

@@ -28,6 +28,9 @@ const NavBar = () => {
         color: '#ffffff',
         fontSize: '22px',
     });
+    const [toggleStyle, setToggleStyle] = useState({
+        color: '#ffffff',
+    })
 
     useEffect(() => {
     const handleScroll = () => {
@@ -45,6 +48,9 @@ const NavBar = () => {
             color: '#000000',
             fontSize: '18px',
         });
+        setToggleStyle({
+            color: "#000",
+        })
         } else {
         setNavbarStyle({
             paddingTop: '15px',
@@ -58,6 +64,9 @@ const NavBar = () => {
         setBrandStyle({
             color: '#ffffff',
             fontSize: '22px',
+        });
+        setToggleStyle({
+            color: "#fff",
         });
         }
     };
@@ -87,7 +96,7 @@ const NavBar = () => {
                 <div className='btn-container'>
                     <CartWidget/>
                     <Navbar.Toggle aria-controls="basic-navbar-nav">
-                        <FontAwesomeIcon icon={faBars}/>
+                        <FontAwesomeIcon className='toggle' style={toggleStyle} icon={faBars}/>
                     </Navbar.Toggle>
                 </div>
             </Container>

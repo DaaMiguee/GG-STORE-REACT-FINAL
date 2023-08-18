@@ -91,7 +91,7 @@ const CardsDetail = ({productsData}) => {
                         </div>
                     </div>
                     <div className='detail-btn-container'>
-                        <Link className='btn-buy' to="/cart">Comprar Ahora</Link>
+                        <Link className='btn-buy ' onClick={() => {addToCart(productsData); handeClckplus()}} to="/cart">Comprar Ahora</Link>
                         <button className='btn-add-cart'onClick={() => {addToCart(productsData); handeClckplus(); notify()}} >Agregar al Carrito</button>
                     </div>
                     <div className='payment-methods'>
