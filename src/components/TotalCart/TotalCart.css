@@ -17,3 +17,17 @@
     font-weight: 500;
     
 }
+
+/*------ responsive ------*/
+@media screen and (max-width: 620px){
+    .total-cart{
+        width: 100%;
+    }
+    .total-cart h4{
+        font-size: 1.4rem;
+    }
+    .total-cart h3{
+        font-size: 1.7rem;
+        
+    }
+}

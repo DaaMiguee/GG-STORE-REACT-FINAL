@@ -2,7 +2,6 @@
     display: flex;
     justify-content: start;
     align-items: center;
-
 }
 .filters div{
     margin: 0 20px;
@@ -15,10 +14,21 @@ input[type="range"] {
     height: 10px;
     border-radius: 5px;
     width: 150px;
-    margin-left: 5px;
 }
 .filters div select{
     border-radius: 4px;
     outline: 0;
-    margin-left: 5px;
+}
+
+/*----- responsive -----*/
+@media screen and (max-width: 450px){
+    .filters{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .filters div{
+        margin-bottom: 10px;
+    }
 }

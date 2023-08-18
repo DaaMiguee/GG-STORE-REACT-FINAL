@@ -17,3 +17,10 @@
     margin-left: 20px;
     color: #000;
 }
+
+/*------ responsive ------*/
+@media screen and (max-width: 520px){
+    .filters-container{
+        padding: 20px 0;
+    }
+}

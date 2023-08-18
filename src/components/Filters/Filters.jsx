@@ -31,6 +31,7 @@ const Filters = ({onChange}) => {
         <section className='filters'>
             <div>
                 <label htmlFor={categoryFilterId}>Categoria:</label>
+                <br />
                 <select name="" id={categoryFilterId} onChange={handleChangeCategory}>
                     <option value="all">Todas</option>
                     <option value="smartphones">Celulares</option>
@@ -39,6 +40,7 @@ const Filters = ({onChange}) => {
             </div>
             <div>
                 <label htmlFor={brandFilterId}>Marca:</label>
+                <br />
                 <select name="" id={brandFilterId} onChange={handleChngeBrand}>
                     <option value="all">Todas</option>
                     <option value="Samsung">Samsung</option>
@@ -48,8 +50,10 @@ const Filters = ({onChange}) => {
                 </select>
             </div>
             <div>
-                <label htmlFor={minPriceFilterId}>Precio Minimo:</label>
+                <label htmlFor={minPriceFilterId}>Precio desde:</label>
+                <br />
                 <input className='rango' type="range" id={minPriceFilterId} min="0" max="680000" onChange={handleChangeMinPrice}/>
+                <br />
                 <span> $ {minPrice}</span>
             </div>
         </section>

@@ -15,3 +15,10 @@
     align-content: center;
     /* margin-left: 2px; */
 }
+
+/*------ responsive ------*/
+@media screen and (max-width: 992px){
+    .count{
+        right: 48px;
+    }
+}

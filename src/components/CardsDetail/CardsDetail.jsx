@@ -17,7 +17,7 @@ const CardsDetail = ({productsData}) => {
     const notify = () => {
         toast.success('Agregado al Carrito', {
             position: "top-center",
-            autoClose: 1000,
+            autoClose: 300,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: false,
@@ -52,7 +52,7 @@ const CardsDetail = ({productsData}) => {
         }
     };
     return (
-        <section>
+        <section className='card-details'>
             <ToastContainer />
             <section className='card-detail-sub-container'>
                 <div className='card-detail-img-container'>
