@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Toast } from 'react-bootstrap';
+import "./paymentSuccess.css"
 
 export const PaymentSuccess = ({ paymentId }) => {
     const [show, setShow] = useState(true);

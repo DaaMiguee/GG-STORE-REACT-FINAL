@@ -15,10 +15,32 @@ const styles = {
         justifyContent: "center",
         alignItems: "center",
     },
+    h1: {
+        fontSize:"2rem",
+        textAlign: "center",
+        fontWeight:"500",
+        margin: "10px",
+    },
+    label: {
+        fontSize: "0.9rem",
+        fontWeight:"500",
+    },
+    input: {
+        width: "100%",
+    },
+    div: {
+        width: "330px",
+        marginBottom: "10px",
+    },
     paymentButton: {
         borderRadius: "12px",
-        marginTop: "10px",
+        marginTop: "20px",
         fontSize: "1rem",
+        backgroundColor:"#0b2739",
+        padding:"10px 15px",
+        fontWeight:"bold",
+        border:"none",
+        width:"207px",
     },
 };
 
@@ -85,39 +107,42 @@ export const Checkout = () => {
     return (
         <Container fluid>
             <Row>
-                <Col md={{ span: 6, offset: 3 }}>
-                    <h1 className="text-form">Formulario de pago</h1>
+                <Col>
+                    <h1 style={styles.h1}>Finalizar compra</h1>
                     <Form onSubmit={handleSubmit} className="form">
-                        <Form.Group controlId="name">
-                            <Form.Label>Nombre en la tarjeta</Form.Label>
+                        <Form.Group style={styles.div} controlId="name">
+                            <Form.Label style={styles.label}>Nombre y Apellido como figura en la tarjeta</Form.Label>
                             <Form.Control
+                                style={styles.input}
                                 type="text"
-                                placeholder="Nombre completo"
                                 required
                             />
                         </Form.Group>
 
-                        <Form.Group controlId="cardNumber">
-                            <Form.Label>Número de tarjeta</Form.Label>
+                        <Form.Group style={styles.div} controlId="cardNumber">
+                            <Form.Label style={styles.label}>Número de tarjeta</Form.Label>
                             <Form.Control
+                                style={styles.input}
                                 type="text"
                                 pattern="[0-9]{16}"
-                                placeholder="1234 5678 9012 3456"
                                 required
                             />
                         </Form.Group>
 
-                        <Form.Group controlId="expirationDate">
-                            <Form.Label>Fecha de vencimiento</Form.Label>
-                            <Form.Control type="month" required />
+                        <Form.Group style={styles.div} controlId="expirationDate">
+                            <Form.Label style={styles.label}>Fecha de Vencimiento</Form.Label>
+                            <Form.Control 
+                                style={styles.input}
+                                type="month" 
+                                required />
                         </Form.Group>
 
-                        <Form.Group controlId="cvc">
-                            <Form.Label>Código de seguridad (CVC)</Form.Label>
+                        <Form.Group style={styles.div} controlId="cvc">
+                            <Form.Label style={styles.label}>Código de seguridad (CVC)</Form.Label>
                             <Form.Control
+                                style={styles.input}
                                 type="text"
                                 pattern="[0-9]{3}"
-                                placeholder="123"
                                 required
                             />
                         </Form.Group>
