@@ -1,13 +1,13 @@
-.no-products{
+.no_products{
     height: calc(100vh - 240px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.no-products h1{
+.no_products h1{
     font-size: 1.7rem;
 }
-.card-container{
+.store_card_container{
     background-color: #fff;
     height: 460px;
     width: 280px;
@@ -17,7 +17,7 @@
     margin: 10px;
     
 }
-.card-container .img-container{
+.store_card_container .img_container{
     border-radius: 25px 25px 0 0;
     position: absolute;
     top: 0;
@@ -28,10 +28,10 @@
     align-items: center;
     text-align: center;
 }
-.card-container .img-container img{
+.store_card_container .img_container img{
     height: 100%;
 }
-.card-container .discount{
+.store_card_container .discount{
     position: absolute;
     top: 10px;
     left: 10px;
@@ -48,18 +48,18 @@
     font-weight: 700;
     
 }
-.card-container .discount::after{
+.store_card_container .discount::after{
     content: "%OFF";
     color: #fff;
     font-size: 0.6rem;
 }
 
-.card-container:hover .zoom-img {
+.store_card_container:hover .zoom_img {
     transform: scale(1.05);
     transition: all 0.5s;
 }
 
-.card-container h3{
+.store_card_container h3{
     color: #000;
     position: absolute;
     bottom: 150px;
@@ -71,7 +71,7 @@
     text-align: center;
     padding: 0 20px;
 }
-.card-container .price{
+.store_card_container .price{
     position: absolute;
     bottom: 100px;
     width: 90%;
@@ -84,7 +84,7 @@
     text-decoration: line-through;
     color: #888888;
 }
-.card-container .price-wd{
+.store_card_container .price_wd{
     position: absolute;
     bottom: 75px;
     width: 90%;
@@ -96,7 +96,7 @@
     padding: 0 20px;
     color: #000;
 }
-.card-desc .item-info{
+.card_desc .item_info{
     position: absolute;
     bottom: 0px;
     bottom: 20px;
@@ -116,10 +116,10 @@
     border: solid 1px #ffffff4a;
 
 }
-.card-desc .item-info:hover{
+.card_desc .item_info:hover{
     background-color: #424242;
 }
-.card-desc .item-info:active{
+.card_desc .item_info:active{
     outline:2px #82c1e9 dotted;
 }
 

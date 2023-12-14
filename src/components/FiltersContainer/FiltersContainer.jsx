@@ -5,7 +5,6 @@ import "./FiltersContainer.css"
 const FiltersContainer = ({changeFilters}) => {
     return (
         <div className='filters-container'>
-            <h2>Filtrar</h2>
             <Filters onChange={changeFilters}/>
         </div>
     )

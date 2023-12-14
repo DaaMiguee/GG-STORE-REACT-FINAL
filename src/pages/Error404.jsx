@@ -6,10 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleExclamation } from '@fortawesome/free-solid-svg-icons'
 const Error404 = () => {
     return (
-        <div className='error-page'>
+        <div className='error_page'>
             <FontAwesomeIcon icon={faCircleExclamation} />
-            <p className='error-page-title'>Parece que esta página no existe</p>
-            <ButtonComponent to="/" className="error-page-link" label="Ir a la página principal"/>
+            <p className='error_page_title'>Parece que esta página no existe</p>
+            <ButtonComponent to="/" className="error_page_link" label="Ir a la página principal"/>
         </div>
     )
 }

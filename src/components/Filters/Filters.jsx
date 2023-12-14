@@ -26,35 +26,44 @@ const Filters = ({onChange}) => {
             brand: e.target.value
         }))
     }
+    
+    const [filtersActive, setFiltersActive] = useState(false);
+    const handleFilters = () =>{
+        setFiltersActive(!filtersActive)
+    }
+    const classfFiltersContainer = !filtersActive ? "all-filters" : "showFilters";
 
     return (
         <section className='filters'>
-            <div>
-                <label htmlFor={categoryFilterId}>Categoria:</label>
-                <br />
-                <select name="" id={categoryFilterId} onChange={handleChangeCategory}>
-                    <option value="all">Todas</option>
-                    <option value="smartphones">Celulares</option>
-                    <option value="tablets">Tablets</option>
-                </select>
-            </div>
-            <div>
-                <label htmlFor={brandFilterId}>Marca:</label>
-                <br />
-                <select name="" id={brandFilterId} onChange={handleChngeBrand}>
-                    <option value="all">Todas</option>
-                    <option value="Samsung">Samsung</option>
-                    <option value="Motorola">Motorola</option>
-                    <option value="Xiaomi">Xiaomi</option>
-                    <option value="Apple">Apple</option>
-                </select>
-            </div>
-            <div>
-                <label htmlFor={minPriceFilterId}>Precio desde:</label>
-                <br />
-                <input className='rango' type="range" id={minPriceFilterId} min="0" max="680000" onChange={handleChangeMinPrice}/>
-                <br />
-                <span> $ {minPrice}</span>
+            <h2 onClick={handleFilters}>Filtrar</h2>
+            <div className={classfFiltersContainer} >
+                <div>
+                    <label htmlFor={categoryFilterId}>Categoria:</label>
+                    <br />
+                    <select name="" id={categoryFilterId} onChange={handleChangeCategory}>
+                        <option value="all">Todas</option>
+                        <option value="smartphones">Celulares</option>
+                        <option value="tablets">Tablets</option>
+                    </select>
+                </div>
+                <div>
+                    <label htmlFor={brandFilterId}>Marca:</label>
+                    <br />
+                    <select name="" id={brandFilterId} onChange={handleChngeBrand}>
+                        <option value="all">Todas</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Motorola">Motorola</option>
+                        <option value="Xiaomi">Xiaomi</option>
+                        <option value="Apple">Apple</option>
+                    </select>
+                </div>
+                <div>
+                    <label htmlFor={minPriceFilterId}>Precio desde:</label>
+                    <br />
+                    <input className='rango' type="range" id={minPriceFilterId} min="0" max="680000" onChange={handleChangeMinPrice}/>
+                    <br />
+                    <span> $ {minPrice}</span>
+                </div>
             </div>
         </section>
     )

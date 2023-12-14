@@ -106,7 +106,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
 }
 .cart-price-wd{
     font-size: 1.2rem;
@@ -114,7 +114,7 @@
     color: #000;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     margin-bottom: -8px;
     padding: -10px;
 }

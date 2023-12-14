@@ -1,114 +1,139 @@
-.home-new {
+.card_container {
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
     margin-top: 50px;
-}
+    padding: 0 40px;
 
-.home-new-cont {
-    width: 94%;
-    height: 80vh;
+}
+.card_container .card_subcontainer {
+    width: 100%;
+    max-width: 1800px;
+    max-height: 500px;
+    min-height: 300px;
     border-radius: 25px;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 50px;
+}
+.card_subcontainer_b{
+    flex-direction: row-reverse;
 }
 
-.home-new-cont .img-container {
-    width: 50%;
-    height: 100%;
+.card_container .card_subcontainer .img_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 38vw;
+    height: 27vw;
+    max-height: 500px;
+    max-width: 700px;
+}
+.img_container_b{
+    justify-content: flex-start !important;
+    align-items: flex-start;
 }
 
-.home-new-cont .img-container img {
+.card_container .card_subcontainer .img_container img {
     height: 100%;
-    width: 100%;
-    border-radius: 25px;
     object-fit: contain;
 }
-
-.home-new-desc {
-    width: 50%;
+.card_container .card_subcontainer .desc_container {
     height: 100%;
-    width: 50%;
-    position: relative;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
-.home-new-desc h3 {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    font-size: 2.3rem;
+.card_container .card_subcontainer .desc_container div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.card_container .card_subcontainer .desc_container div h3 {
+    font-size: clamp(1.8rem, 2.3vw, 3rem);
     font-weight: 500;
 }
-.home-new-desc h4 {
-    position: absolute;
-    top: 160px;
-    left: 0;
-    font-size: 1rem;
+.card_container .card_subcontainer .desc_container div h4 {
+    font-size: clamp(1rem, 1.1vw, 1.5rem);
     padding-right: 40px;
-    color: #4b4b4b;
-}
-.home-new-desc h5 {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    text-align: start;
-    font-size: 1rem;
-    color: #4b4b4b;
-}
+    padding-bottom: 30px;
+    color: #000;
+    opacity: 0.8;
+    font-weight: 400;
 
-.home-new-desc .portada-home-link {
-    position: absolute;
-    bottom: 100px;
-    left: 0;
+}
+.card_container .card_subcontainer .desc_container div h5 {
+    font-size: clamp(1rem, 1.1vw, 1.5rem);
+    color: #000;
+    opacity: 0.8;
+    font-weight: 400;
+}
+.card_container .card_subcontainer .desc_container div .home_button {
     text-decoration: none;
     background-color: #0b2739;
+    font-size: 1rem;
+    font-size: clamp(1rem, 1.1vw, 1.5rem);
+    width: clamp(140px, 260px, 200px);
+    text-align: center;
     color: #fff;
-    padding: 10px 20px;
-    font-weight: 500;
-    font-size: 0.9rem;
-    border-radius: 25px;
+    padding: 10px 15px;
+    border-radius: 24px;
     border: none;
     transition: background-color 0.3s;
+    &:hover{
+        background-color: #424242;
+    }
+    &:active{
+        outline: 2px #000000 dotted;
+    }
 }
 
-.home-new-desc .portada-home-link:hover {
-    background-color: #424242;
-}
 
-.home-new-desc .portada-home-link:active {
-    outline: 2px #000000 dotted;
-}
-
-.news-container {
+.news_container {
     margin-top: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
+    padding: 40px;
 }
-
-.news-container h2 {
+.news_container h2 {
     display: block;
-    width: 100vw;
     text-align: center;
     font-size: 2rem;
     font-weight: 500;
-    margin: 25px 0 10px;
 }
-
-.news-container .product-details {
+.news_container div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.news_container div .product_details {
     background-color: #fff;
     height: 280px;
     width: 280px;
-    margin: 10px;
     border-radius: 25px;
     position: relative;
     overflow: hidden;
 }
-
-.news-container .product-details h3 {
+.news_container div .product_details img {
+    height: 100%;
+    border-radius: 25px;
+    transform: scale(0.6);
+    position: absolute;
+    top: -40px;
+}
+.news_container div .product_details h3 {
     position: absolute;
     bottom: 65px;
     left: 50%;
@@ -119,29 +144,36 @@
     text-align: center;
 }
 
-.news-container .product-details span {
+.news_container div .product_details span {
+    font-size: 0.7rem;
     position: absolute;
     bottom: 35px;
-    font-size: 0.7rem;
     left: 0;
     width: 100%;
     text-align: center;
     opacity: 1;
-    transition: all 0.3s;
     color: #2189ff;
+    transition: all 0.3s;
 }
 
-.product-details:hover span {
+.news_container div .product_details:hover span {
     bottom: 65px;
     opacity: 0;
 }
+.news_container div .product_details:hover .news_link_container .news_product_info {
+    bottom: 20px;
+}
 
-.news-container .product-details .news-link-container {
+.news_container div .product_details:hover .news_link_container {
+    opacity: 1;
+}
+
+.news_container div .product_details .news_link_container {
     opacity: 0;
     transition: opacity 0.3s;
 }
 
-.news-container .product-details .news-link-container .news-product-info {
+.news_container div .product_details .news_link_container .news_product_info {
     text-decoration: none;
     position: absolute;
     bottom: -10px;
@@ -156,363 +188,50 @@
     border: none;
     transition: background-color 0.3s;
     transition: all 0.3s;
-}
-
-.news-container .product-details .news-link-container .news-product-info:hover {
-    background-color: #424242;
-}
-
-.product-details:hover .news-link-container .news-product-info {
-    bottom: 20px;
-}
-
-.product-details:hover .news-link-container {
-    opacity: 1;
-}
-
-.news-container .product-details img {
-    height: 100%;
-    border-radius: 25px;
-    transform: scale(0.6);
-    position: absolute;
-    top: -40px;
-}
-
-.news-container-c {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin-top: 50px;
-}
-
-.news-container-c .side-a {
-    width: 94%;
-    height: 80vh;
-    border-radius: 25px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.side-a .img-container {
-    width: 50%;
-    height: 100%;
-}
-
-.side-a .img-container img {
-    height: 100%;
-    width: 100%;
-    border-radius: 25px;
-    object-fit: contain;
-}
-
-.side-a .desc {
-    width: 50%;
-    height: 100%;
-    padding: 15px;
-    width: 50%;
-    position: relative;
-}
-
-.side-a .desc h3 {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    margin-left: 40px;
-    font-size: 2.3rem;
-    font-weight: 500;
-
-}
-
-.side-a .desc h4 {
-    position: absolute;
-    top: 160px;
-    left: 0;
-    margin-left: 40px;
-    font-size: 1rem;
-    color: #4b4b4b;
-
-}
-
-.side-a .desc h5 {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    margin-left: 40px;
-    width: 100%;
-    text-align: start;
-    font-size: 1rem;
-    color: #4b4b4b;
-}
-
-.side-a div .portada-home-link {
-    position: absolute;
-    bottom: 100px;
-    left: 40px;
-    text-decoration: none;
-    background-color: #0b2739;
-    color: #fff;
-    padding: 10px 20px;
-    font-weight: 500;
-    font-size: 0.9rem;
-    border-radius: 25px;
-    border: none;
-    transition: background-color 0.3s;
-}
-
-.side-a div .portada-home-link:hover {
-    background-color: #424242;
-}
-
-.side-a div .portada-home-link:active {
-    outline: 2px #000000 dotted;
-}
-
-/*---------- responsive ----------*/
-@media screen and (max-width: 910px) {
-    .home-new .home-new-cont {
-        height: 65vh;
-    }
-    .home-new .home-new-cont .home-new-desc h3 {
-        top: 80px;
-        font-size: 1.5rem;
-    }
-    .home-new .home-new-cont .home-new-desc h4 {
-        top: 120px;
-        font-size: 0.9rem;
-    }
-    .home-new .home-new-cont .home-new-desc h5 {
-        top: 40px;
-        font-size: 0.9rem;
-    }
-    .home-new .home-new-cont .home-new-desc .portada-home-link{
-        bottom: 80px;
-    }
-
-
-    .news-container-c .side-a {
-        height: 65vh;
-    }
-    .news-container-c .side-a .desc h3 {
-        top: 80px;
-        font-size: 1.5rem;
-    }
-    .news-container-c .side-a .desc h4 {
-        top: 120px;
-        font-size: 0.9rem;
-    }
-    .news-container-c .side-a .desc h5 {
-        top: 40px;
-        font-size: 0.9rem;
-    }
-    .news-container-c .side-a .desc .portada-home-link {
-        bottom: 80px;
+    &:hover{
+        background-color: #424242;
     }
 }
 
-@media screen and (max-width: 740px) {
-    .home-new .home-new-cont .home-new-desc h3 {
-        font-size: 1.3rem;
-    }
-    .home-new .home-new-cont .home-new-desc h4 {
-        font-size: 0.8rem;
-    }
-    .home-new .home-new-cont .home-new-desc h5 {
-        font-size: 0.8rem;
-    }
-    .home-new .home-new-cont .home-new-desc .portada-home-link {
-        font-size: 0.8rem;
-    }
-
-
-    .news-container-c .side-a .desc h3 {
-        font-size: 1.3rem;
-    }
-    .news-container-c .side-a .desc h4 {
-        font-size: 0.8rem;
-    }
-    .news-container-c .side-a .desc h5 {
-        font-size: 0.8rem;
-    }
-    .news-container-c .side-a .desc .portada-home-link {
-        font-size: 0.8rem;
+@media (max-width: 1205px) {
+    .card_container .card_subcontainer .desc_container div h4{
+        padding: 0;
     }
 }
-
-@media screen and (max-width: 615px) {
-    .home-new .home-new-cont {
-        height: auto;
+@media screen and (max-width: 900px) {
+    .card_container{
+    padding: 0 10px;
+    }
+    .card_container .card_subcontainer{
         flex-direction: column;
-        width: 99%;
+        max-height: 100%;
+        padding: 30px;
+    }
+    .card_container .card_subcontainer .desc_container{
+        width: 100%;
+    }
+    .card_container .card_subcontainer .desc_container div{
+        align-items: center;
+    }
+    .card_container .card_subcontainer .desc_container div h4{
         padding: 0;
-    }
-    .home-new .home-new-cont .home-new-desc {
-        height: 260px;
-        width: 100%;
-    }
-    .home-new .home-new-cont .home-new-desc h3 {
-        font-size: 2rem;
-        margin: 0;
-        top: 50px;
-        width: 100%;
         text-align: center;
     }
-    .home-new .home-new-cont .home-new-desc h4 {
-        font-size: 0.9rem;
-        margin: 0;
-        top: 100px;
-        width: 80%;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: .5;
-        font-family: sans-serif;
-        text-align: center;
+    .card_container .card_subcontainer .img_container{
+        width: 90%;
     }
-    .home-new .home-new-cont .home-new-desc h5 {
-        font-size: 0.9rem;
-        top: 10px;
-        margin: 0;
-        width: 100%;
-        text-align: center;
-        opacity: .5;
+    .card_container .card_subcontainer .img_container {
+        justify-content: center;
+        width: 65vw;
+        height: 65vw;
     }
-    .home-new .home-new-cont .home-new-desc .portada-home-link {
-        font-size: 1.1rem;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .home-new .home-new-cont .img-container {
-        width: 100%;
-        height: 70vh;
-    }
-
-
-    .news-container .product-details{
-        height: 200px;
-        width: 200px;
-    }
-    .news-container .product-details img{
-        height: 40%;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .news-container .product-details div .news-product-info{
-        width: 60%;
-        text-align: center;
-    }
-
-
-    .news-container-c .side-a {
-        height: auto;
-        flex-direction: column-reverse;
-        width: 99%;
-        padding: 0;
-    }
-    .news-container-c .side-a .desc {
-        height: 260px;
-        width: 100%;
-    }
-    .news-container-c .side-a .desc h3 {
-        font-size: 2rem;
-        margin: 0;
-        top: 50px;
-        width: 100%;
-        text-align: center;
-    }
-    .news-container-c .side-a .desc h4 {
-        font-size: 0.9rem;
-        margin: 0;
-        top: 100px;
-        width: 80%;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: .5;
-        font-family: sans-serif;
-        text-align: center;
-    }
-    .news-container-c .side-a .desc h5 {
-        font-size: 0.9rem;
-        top: 10px;
-        margin: 0;
-        width: 100%;
-        text-align: center;
-        opacity: .5;
-    }
-    .news-container-c .side-a .desc .portada-home-link {
-        font-size: 1.1rem;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .news-container-c .side-a .img-container {
-        width: 100%;
-        height: 70vh;
+    .card_container .card_subcontainer .desc_container div .home_button{
+        margin: 30px;
     }
 }
-
-@media screen and (max-width: 440px){
-    .news-container .product-details{
-        height: 280px;
-        width: 280px;
-    }
-    .news-container .product-details img{
-        height: 50%;
-        top: 25px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .news-container .product-details div .news-product-info{
-        width: 60%;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 385px){
-    .home-new .home-new-cont .home-new-desc h3 {
-        text-align: start;
-        padding-left: 15px;
-        top: 40px;
-    }
-    .home-new .home-new-cont .home-new-desc h4 {
-        text-align: start;
-        width: 100%;
-        padding: 15px;
-        top: 80px;
-    }
-    .home-new .home-new-cont .home-new-desc h5 {
-        text-align: start;
-        padding-left: 15px;
-    }
-    .home-new .home-new-cont .home-new-desc .portada-home-link {
-        left: 15px;
-        transform: none;
-        bottom: 20px;
-    }
-
-
-    .news-container-c .side-a .desc h3 {
-        text-align: start;
-        padding-left: 15px;
-        top: 40px;
-    }
-    .news-container-c .side-a .desc h4 {
-        text-align: start;
-        width: 100%;
-        padding: 15px;
-        top: 80px;
-    }
-    .news-container-c .side-a .desc h5 {
-        text-align: start;
-        padding-left: 15px;
-    }
-    .news-container-c .side-a .desc .portada-home-link {
-        left: 15px;
-        transform: none;
-        bottom: 20px;
+@media screen and (max-width: 500px) {
+    .card_container .card_subcontainer .img_container{
+        width: 80vw;
+        height: 80vw;
     }
 }

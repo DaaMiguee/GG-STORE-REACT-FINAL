@@ -27,7 +27,7 @@ const Store = () => {
             {loading ? <LoaderComponent/> :
             <section>
                 <FiltersContainer changeFilters ={setFilters}/>
-                <div className='cards-container'>
+                <div className='cards_container'>
                     <Products productsData={filteredProducts}/>
                 </div>
             </section>}

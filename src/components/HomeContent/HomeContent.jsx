@@ -13,81 +13,86 @@ const MainContent = () => {
 
     return (
         <div>
-            <section className='home-new'>
-                <div className='home-new-cont'>
-                    <div className='img-container'>
+            <section className='card_container'>
+                <div className='card_subcontainer'>
+                    <div className='img_container'>
                         <img src= "https://firebasestorage.googleapis.com/v0/b/proyect-images.appspot.com/o/images%2Fs23u_2.jpg?alt=media&token=35dc0724-7036-44f1-84a5-a8e65da0ec6f" alt='imagen de matebook'></img>
                     </div>
-                    <div className='home-new-desc'>
-                        <h5>6,8 pulgadas</h5>
-                        <h3>Samsung S23 Ultra</h3>
-                        <h4>Qualcomm Snapdragon 8 Gen 2 | Dynamic AMOLED curvada de 6,8 pulgadas | 256GB</h4>
-                        <ButtonComponent className="portada-home-link" label="Conoce más" to={`/item/v90x6E5gV5YB99OhrLx0`}/>
+                    <div className='desc_container'>
+                        <div>
+                            <h5>6,8 pulgadas</h5>
+                            <h3>Samsung S23 Ultra</h3>
+                            <h4>Qualcomm Snapdragon 8 Gen 2 | Dynamic AMOLED curvada de 6,8 pulgadas | 256GB</h4>
+                            <ButtonComponent className="home_button" label="Conoce más" to={`/item/v90x6E5gV5YB99OhrLx0`}/>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section className='news-container'>
+            <section className='news_container'>
                 <h2>Novedades</h2>
-                <div className='product-details'>
-                    <img src={image002} alt=''></img>
-                    <h3>AMAZFIT GTS 2</h3>
-                    <span>15% de descuento en compras online</span>
-                    <div className='news-link-container'>
-                        <ButtonComponent 
-                            className="news-product-info" 
-                            label ="Ir a Detalles"
-                            to={`/product/5003`}
-                            />
+                <div>
+                    <div className='product_details'>
+                        <img src={image002} alt=''></img>
+                        <h3>AMAZFIT GTS 2</h3>
+                        <span>15% de descuento en compras online</span>
+                        <div className='news_link_container'>
+                            <ButtonComponent 
+                                className="news_product_info" 
+                                label ="Conoce más"
+                                to={`/product/5003`}
+                                />
+                        </div>
                     </div>
-                    
-                </div>
-                <div className='product-details'>
-                    <img src={image003} alt=''></img>
-                    <h3>REDMI NOTE 11 PRO 5G</h3>
-                    <span>15% de descuento en compras online</span>
-                    <div className='news-link-container'>
-                        <ButtonComponent 
-                            className="news-product-info" 
-                            label ="Conoce más"
-                            to={`/product/7053`}
-                            />
+                    <div className='product_details'>
+                        <img src={image003} alt=''></img>
+                        <h3>REDMI NOTE 11 PRO 5G</h3>
+                        <span>15% de descuento en compras online</span>
+                        <div className='news_link_container'>
+                            <ButtonComponent 
+                                className="news_product_info" 
+                                label ="Conoce más"
+                                to={`/product/7053`}
+                                />
+                        </div>
                     </div>
-                </div>
-                <div className='product-details'>
-                    <img src={image004} alt=''></img>
-                    <h3>XIAOMI REDMI NOTE 12S 8/256</h3>
-                    <span>15% de descuento en compras online</span>
-                    <div className='news-link-container'>
-                        <ButtonComponent 
-                            className="news-product-info" 
-                            label ="Conoce más"
-                            to={`/product/7745`}
-                            />
+                    <div className='product_details'>
+                        <img src={image004} alt=''></img>
+                        <h3>XIAOMI REDMI NOTE 12S 8/256</h3>
+                        <span>15% de descuento en compras online</span>
+                        <div className='news_link_container'>
+                            <ButtonComponent 
+                                className="news_product_info" 
+                                label ="Conoce más"
+                                to={`/product/7745`}
+                                />
+                        </div>
                     </div>
-                </div>
-                <div className='product-details'>
-                    <img src={image005} alt=''></img>
-                    <h3>AURICULARES HAYLOU T15</h3>
-                    <span>15% de descuento en compras online</span>
-                    <div className='news-link-container'>
-                        <ButtonComponent 
-                            className="news-product-info" 
-                            label ="Conoce más"
-                            to={`/product/5040`}
-                            />
+                    <div className='product_details'>
+                        <img src={image005} alt=''></img>
+                        <h3>AURICULARES HAYLOU T15</h3>
+                        <span>15% de descuento en compras online</span>
+                        <div className='news_link_container'>
+                            <ButtonComponent 
+                                className="news_product_info" 
+                                label ="Conoce más"
+                                to={`/product/5040`}
+                                />
+                        </div>
                     </div>
                 </div>
             </section>
-            <section className='news-container-c'>
-                <div className='side-a'>
-                    <div className='desc'>
-                        <h5>Se pasa de Pro</h5>
-                        <h3>Iphone 14 Pro Max</h3>
-                        <h4>Dynamic Island | Apple A16 Bionic | Pantalla Oled de 6,8 pulgadas | 256GB | 512Gb | 1Tera</h4>
-                        <ButtonComponent className="portada-home-link" label ="Conoce más" to={`/item/HtIjmsNxgLYdd9qrR7f2`}/>
-                    </div>
-                    <div className='img-container'>
+            <section className='card_container'>
+                <div className='card_subcontainer card_subcontainer_b'>
+                    <div className='img_container img_container_b'>
                         <img src="https://firebasestorage.googleapis.com/v0/b/proyect-images.appspot.com/o/images%2Fi14pm_2.jpg?alt=media&token=284b8d8b-7f44-4799-944c-513666662d26" alt="" />
+                    </div>
+                    <div className='desc_container'>
+                        <div>
+                            <h5>Se pasa de Pro</h5>
+                            <h3>Iphone 14 Pro Max</h3>
+                            <h4 className='text_card_b' >Dynamic Island | Apple A16 Bionic | Pantalla Oled de 6,8 pulgadas | 256GB | 512Gb | 1Tera</h4>
+                            <ButtonComponent className="home_button" label ="Conoce más" to={`/item/HtIjmsNxgLYdd9qrR7f2`}/>
+                        </div>
                     </div>
                 </div>
             </section>
